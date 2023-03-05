@@ -1,0 +1,156 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root {
+    --bg-primary: rgb(70, 89, 255);
+    --bg-secondary: #eaeaea;
+    --text-primary: #f7f7f7;
+    --text-secondary: #222;
+    --icons-bg-primary: tomato;
+    --icons-bg-secondary: black;
+    --icons-bg-third: crimson;
+    --icons-bg-fourth: darkblue;
+    --icons-bg-ig: ; 
+}
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.yt {
+    color: var(--icons-bg-third);
+}
+
+.ig {
+    color: var(--icons-bg-primary);
+}
+
+.fb {
+    color: var(--icons-bg-fourth);
+}
+
+.tt {
+    color: var(--icons-bg-secondary);
+}
+
+.description {
+    margin-top: 8px;
+    font-size: .5em;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transform: rotate(2deg);
+    transition: .2s ease-in-out;
+}
+
+@media screen and (max-width: 389px) {
+    .card{
+        width: 80%;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .icons {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 476px) {
+    .card {
+        width: 95%;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .icons {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 16px;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width:565px) and (max-width:820px) {
+    .btn {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:821px) {
+    .btn {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .btn {
+        width: 45%;
+    }
+}
+

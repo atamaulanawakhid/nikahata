@@ -1,0 +1,425 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta charset="utf-8"> 
+  <title>John and Jane's Wedding</title>
+ </head>
+ <body>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+  <style>
+   /* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: absolute;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+    
+}
+
+/* Header Styles */
+
+header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 8px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: #c83b3b;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.rsvp-button {
+    display: inline-block;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 30px;
+    transition: background-color 0.6s ease;
+}
+
+.rsvp-button:hover {
+    background-color: #c83b3b;
+}
+
+/* Story Section Styles */
+
+.story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.story-text {
+    width: 50%;
+}
+
+.story-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.story-images {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.story-images img {
+    width: 48%;
+    border-radius: 4px;
+}
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+/* Header */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+header h1 {
+    color: #333;
+    float: left;
+    font-size: 28px;
+    line-height: 60px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #333;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    transition: all 0.6s ease;
+}
+
+nav a:hover {
+    color: #f3c623;
+}
+
+.menu-icon {
+    color: #333;
+    cursor: pointer;
+    display: none;
+    font-size: 24px;
+    line-height: 60px;
+    margin-right: 20px;
+    float: right;
+}
+
+/* Hero */
+
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero h3 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.rsvp-button {
+    background-color: #f3c623;
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.rsvp-button:hover {
+    background-color: #333;
+}
+
+/* Story */
+
+.story {
+    background-color: #f8f8f8;
+}
+
+.story h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.story p {
+    color: #777;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.story-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.story-images img {
+    width: 48%;
+}
+
+  
+ </style> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel"> <!-- Indicators --> 
+   <ul class="carousel-indicators"> 
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
+    <li data-target="#myCarousel" data-slide-to="1"></li> 
+    <li data-target="#myCarousel" data-slide-to="2"></li> 
+   </ul> <!-- The slideshow --> 
+   <div class="carousel-inner"> 
+    <div class="carousel-item active"> 
+     <img src="https://picsum.photos/id/1003/1200/600" alt="Slide 1"> 
+     <div class="carousel-caption"> 
+      <h3>First slide label</h3> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+     </div> 
+    </div> 
+    <div class="carousel-item"> 
+     <img src="https://picsum.photos/id/1004/1200/600" alt="Slide 2"> 
+     <div class="carousel-caption"> 
+      <h3>Second slide label</h3> 
+      <p>Aliquam sit amet dapibus lorem, sed maximus odio.</p> 
+     </div> 
+    </div> 
+    <div class="carousel-item"> 
+     <img src="https://picsum.photos/id/1005/1200/600" alt="Slide 3"> 
+     <div class="carousel-caption"> 
+      <h3>Third slide label</h3> 
+      <p>Curabitur a felis in nunc fringilla tristique.</p> 
+     </div> 
+    </div> 
+   </div> <!-- Left and right controls --> <a class="carousel-control-prev" href="#myCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#myCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> 
+  </div> 
+  <header> 
+   <div class="container"> 
+    <h1>John and Jane's Wedding</h1> 
+    <nav> 
+     <div class="menu-icon"> <i class="fa fa-bars"></i> 
+     </div> 
+     <ul class="nav-list"> 
+      <li><a href="#">Home</a></li> 
+      <li><a href="#">Our Story</a></li> 
+      <li><a href="#">Details</a></li> 
+      <li><a href="#">RSVP</a></li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </header> 
+  <main> 
+   <section class="hero"> 
+    <div class="container"> 
+     <h2>Save The Date</h2> 
+     <h3>October 1, 2023</h3> 
+     <p>San Francisco, California</p> <a href="#rsvp" class="rsvp-button">RSVP</a> 
+    </div> 
+   </section> 
+   <section class="story"> 
+    <div class="container"> 
+     <div class="story-text"> 
+      <h2>Our Love Story</h2> 
+      <p>John and Jane met in college and instantly clicked. After dating for several years, John proposed to Jane at a romantic dinner. They are excited to share their special day with you!</p> 
+     </div> 
+     <div class="story-images"> 
+      <img src="images/love-story-1.jpg" alt="Love Story 1"> 
+      <img src="images/love-story-2.jpg" alt="Love Story 2"> 
+     </div> 
+    </div> 
+   </section> 
+   <section class="details"> 
+    <div class="container"> 
+     <h2>Wedding Details</h2> 
+     <p>The wedding will take place on October 1, 2023 at 5:00 PM at the San Francisco Conservatory of Flowers. A reception will follow immediately after the ceremony. Dress code is semi-formal. Please RSVP by September 1, 2023.</p> 
+     <div class="details-images"> 
+      <img src="images/wedding-details-1.jpg" alt="Wedding Details 1"> 
+      <img src="images/wedding-details-2.jpg" alt="Wedding Details 2"> 
+     </div> 
+    </div> 
+   </section> 
+   <section class="rsvp" id="rsvp"> 
+    <div class="container"> 
+     <h2>RSVP</h2> 
+     <p>Please RSVP by September 1, 2023. We can't wait to celebrate with you!</p> 
+     <form action="submit-form.php" method="post"> <label for="name">Name:</label> 
+      <input type="text" name="name" id="name" required> 
+      <br> <label for="email">Email:</label> 
+      <input type="email" name="email" id="email" required> 
+      <br> <label for="guests">Number of Guests:</label> 
+      <input type="number" name="guests" id="guests" required> 
+      <br> <label for="message">Message:</label> <textarea name="message" id="message" rows="5" required></textarea> <button type="submit" class="rsvp-button">Submit</button> 
+     </form> 
+    </div> 
+   </section> 
+  </main> 
+  <footer> 
+   <div class="container"> 
+    <p>© 2023 John and Jane's Wedding</p> 
+    <ul class="social-icons"> 
+     <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+     <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+     <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
+    </ul> 
+   </div> 
+  </footer> 
+  <script src="https://kit.fontawesome.com/your-key.js" crossorigin="anonymous"></script> 
+  <script src="script.js"></script> 
+ </body>
+</html>

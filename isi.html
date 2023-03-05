@@ -1,0 +1,83 @@
+!doctype html>
+<html> 
+ <head> 
+  <meta charset="utf-8"> 
+  <title>John and Jane's Wedding</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="isi.css"> 
+ </head> 
+ <body> 
+  <header> 
+   <div class="container"> 
+    <h1>John and Jane's Wedding</h1> 
+    <nav> 
+     <div class="menu-icon"> <i class="fa fa-bars"></i> 
+     </div> 
+     <ul class="nav-list"> 
+      <li><a href="#">Home</a></li> 
+      <li><a href="#">Our Story</a></li> 
+      <li><a href="#">Details</a></li> 
+      <li><a href="#">RSVP</a></li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </header> 
+  <main> 
+   <section class="hero"> 
+    <div class="container"> 
+     <h2>Save The Date</h2> 
+     <h3>October 1, 2023</h3> 
+     <p>San Francisco, California</p> <a href="#rsvp" class="rsvp-button">RSVP</a> 
+    </div> 
+   </section> 
+   <section class="story"> 
+    <div class="container"> 
+     <div class="story-text"> 
+      <h2>Our Love Story</h2> 
+      <p>John and Jane met in college and instantly clicked. After dating for several years, John proposed to Jane at a romantic dinner. They are excited to share their special day with you!</p> 
+     </div> 
+     <div class="story-images"> 
+      <img src="images/love-story-1.jpg" alt="Love Story 1"> 
+      <img src="images/love-story-2.jpg" alt="Love Story 2"> 
+     </div> 
+    </div> 
+   </section> 
+   <section class="details"> 
+    <div class="container"> 
+     <h2>Wedding Details</h2> 
+     <p>The wedding will take place on October 1, 2023 at 5:00 PM at the San Francisco Conservatory of Flowers. A reception will follow immediately after the ceremony. Dress code is semi-formal. Please RSVP by September 1, 2023.</p> 
+     <div class="details-images"> 
+      <img src="images/wedding-details-1.jpg" alt="Wedding Details 1"> 
+      <img src="images/wedding-details-2.jpg" alt="Wedding Details 2"> 
+     </div> 
+    </div> 
+   </section> 
+   <section class="rsvp" id="rsvp"> 
+    <div class="container"> 
+     <h2>RSVP</h2> 
+     <p>Please RSVP by September 1, 2023. We can't wait to celebrate with you!</p> 
+     <form action="submit-form.php" method="post"> <label for="name">Name:</label> 
+      <input type="text" name="name" id="name" required> 
+      <br> <label for="email">Email:</label> 
+      <input type="email" name="email" id="email" required> 
+      <br> <label for="guests">Number of Guests:</label> 
+      <input type="number" name="guests" id="guests" required> 
+      <br> <label for="message">Message:</label> <textarea name="message" id="message" rows="5" required></textarea> <button type="submit" class="rsvp-button">Submit</button> 
+     </form> 
+    </div> 
+   </section> 
+  </main> 
+  <footer> 
+   <div class="container"> 
+    <p>© 2023 John and Jane's Wedding</p> 
+    <ul class="social-icons"> 
+     <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+     <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+     <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
+    </ul> 
+   </div> 
+  </footer> 
+  <script src="https://kit.fontawesome.com/your-key.js" crossorigin="anonymous"></script> 
+  <script src="script.js"></script> 
+ </body>
+</html>
