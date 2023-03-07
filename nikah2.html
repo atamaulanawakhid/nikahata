@@ -442,7 +442,7 @@
     position: relative;
 }
     
-#myButton {
+/* #myButton {
     z-index: 1;
     position: fixed;
     top: 65px;
@@ -456,43 +456,44 @@
     color: rgb(255, 168, 68);
     background-color: rgb(49, 13, 13);
     transition: ease-in-out, 1s;
-}
+} */
 
 /*untuk membuat kotak scroll-scroll -an yang bisa snap*/
 .bungkus{
     position: relative;
     display: flex;
-    margin-top: px;
-    margin-left: 88%;
-    z-index: 1; /*pakai z-index jika elemen tiba-tiba hilang atau tidak kelihatan*/
+    width: 15rem;
+    margin-left: 83%;
+    z-index: 10;
 }
 
 .awal{
     position: fixed;
-    height: 10rem;
-    width: 10rem;
-    background: transparent;
+    height: 10px;
+    width: 15rem;
+    background: none;
     display: flex;
-    margin-top: 5rem;
+    margin-top: 4rem;
     /* flex-direction: column; pake ini supaya gambar bisa tersusun secara vertikal (naik-turun) */
     /* overflow-y: scroll; */
-    scroll-snap-type: y mandatory; /*supaya gambar-gambar bisa snap*/ /*INGAT x=horizontal y=vertikal*/
-    /*overflow: auto;     /*supaya gambar bisa di resize*/
-    resize: vertical;   /*pilihan arah atau pola resize bisa naik-turun(vertical) kiri-kanan(horizontal) atau dua-duanya(both)*/
+    /* scroll-snap-type: y mandatory; /*supaya gambar-gambar bisa snap INGAT x=horizontal y=vertikal */
+    /* overflow: auto;     supaya gambar bisa di resize */
+    /* resize: vertical;   pilihan arah atau pola resize bisa naik-turun(vertical) kiri-kanan(horizontal) atau dua-duanya(both) */
 }
 
-.awal img {
-    min-height: 10rem;  /*min-height atau min-width harus sama dengan height atau width yang di atas*/
+/* .awal img {
+    min-height: 10rem;
     display: flex;
     border-radius: 10px;
     color: white;
-    scroll-snap-align: center; /*supaya gambar-gambar yang bisa snap punya tujuan*/
-}
+    scroll-snap-align: center;
+} */
 
 #demo{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 15rem;
     background: linear-gradient(90deg,#00dbde,#fc00ff);
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -506,7 +507,8 @@
     }
 
     .bungkus{
-        margin-left: 60%;
+        width: 15rem;
+        margin-left: 52%;
     }
 
     .pesan{
@@ -720,8 +722,8 @@
                     <div class="story-text">
                         <h2>Wedding Details</h2>
                     </div>
-                    <p>The wedding will take place on <span class="text-danger">[Censored]</span> at the <span class="text-danger">[Censored]</span>. A reception will follow immediately after the
-                        ceremony. Dress code is semi-formal. Please RSVP by <span class="text-danger">[Censored]</span>.</p>
+                    <p>The wedding will take place on 4 October 2023 at my house. A reception will follow immediately after the
+                        ceremony. Dress code is semi-formal. Please RSVP by July.</p>
                     <div class="details-images  mb-3">
                         <img class="float-start img" src="gambar/bgcincin.jpg" alt="Wedding Details 1" style="height: 200px;">
                         <img class="float-end gmi" src="gambar/cincinbunga.jpg" alt="Wedding Details 2" style="height: 200px;">
@@ -826,7 +828,7 @@
             // });
 
             // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+var countDownDate = new Date("October 4, 2023 08:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
