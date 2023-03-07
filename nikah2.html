@@ -564,6 +564,7 @@
 }
     </style>
     <body>
+    <div onclick="togglePlayback()">
         <div>
             <nav class="navbar navbar-expand-lg bg-danger-subtle fixed-top">
                 <div class="container-fluid">
@@ -619,6 +620,12 @@
         </div>
         
         </div>
+
+        <audio id="bg-music" autoplay loop hidden>
+            <source src="musik/Doppio's Ringtone (JoJo's Bizzare Adventure).m4a" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+      
     <div class="ani">
         <div class="container-fluid" style="text-shadow: -1px -1px 0 red; text-shadow: 1px 1px 0 red;">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -691,7 +698,9 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        </div>
 
+    <div class="ani">
         <main>
             <section class="hero ani" id="date">
                 <div class="container">
@@ -771,7 +780,9 @@
                     </div>
             </section>
         </div>
+    </div>
 
+<div class="ani">
 <div style="display: flex; justify-content: center;">
     <div class="card d-flex" style="width: fit-content; margin-top: 40px; width: 82.5%;">
         <div class="card-header" style="text-align: center;" >
@@ -812,7 +823,9 @@
             </div>
         </div>
         </main>
-    </div>
+</div>
+
+</div>
 
         <!-- https://picsum.photos/id/1003/1200/600
             https://picsum.photos/id/1004/1200/600
@@ -820,6 +833,18 @@
         
 
         <script>
+            var music = document.getElementById("bg-music");
+
+function togglePlayback() {
+  if (music.paused) {
+    music.play();
+    document.getElementsByTagName('button')[0].innerHTML = 'Pause Music';
+  } 
+//   else {
+//     music.pause();
+//     document.getElementsByTagName('button')[0].innerHTML = 'Play Music';
+//   }
+}
             // const button = document.querySelector('#myButton');
             // const element = document.querySelector('#bungkus');
             
