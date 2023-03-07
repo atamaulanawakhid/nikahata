@@ -499,12 +499,61 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media only screen and (max-width: 767px){
+    .navbar > div > a{
+        font-size: 15px;
+    }
+
+    .bungkus{
+        margin-left: 65%;
+    }
+
+    .pesan{
+        margin-left: 9%;
+        width: 400px;
+    }
+
+    .pesan > section > div > div > div > iframe{
+        width: 400px;
+    }
+
+    .details-images > img{
+        width: 20px;
+        height: 20px;
+    }
+    #rsvp{
+        margin-top: 0;
+    }
+
+    .pesan{
+        display: flex;
+        margin-top: 220px !important;
+        padding-top: 10px;
+        
+    }
+
+    .zigzag > p {
+        width: 200px !important;
+        height: 200px !important;
+        font-size: 10px;
+    }
+    .zigzag > img{
+        width: 200px !important;
+        height: auto !important;
+    }
+
+    .details-images > img{
+        width: auto !important;
+        height: 100px !important;
+    }
+}
     </style>
     <body>
         <div>
             <nav class="navbar navbar-expand-lg bg-danger-subtle fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="nikah.html" style="background: linear-gradient(90deg,#00dbde,#fc00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Pernikahan Manusia dan Manusia</a>
+                    <a class="navbar-brand" href="nikah.html" style="background: linear-gradient(90deg,#00dbde,#fc00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Pernikahan Manusia & Manusia</a>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -646,7 +695,7 @@
                             years, John proposed to Jane at a romantic dinner. They are excited to share
                             their special day with you!</p>
                     </div>
-                    <div>
+                    <div class="zigzag">
                         <img src="gambar/pasangan.jpg" class="rounded float-start img" alt="..." style="width: 500px;">
                         <p class="float-end bg-light" style="width: 500px; height: 320px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ut saepe, ex quibusdam at iure quidem architecto provident debitis nemo dicta consequuntur libero. Similique atque dolore facilis asperiores, veritatis voluptas quisquam quam magni! Accusamus in nisi unde aliquid nemo cum quo? Laborum molestias deserunt ad excepturi officia aperiam ab fuga nam accusamus ipsum, assumenda suscipit cum aliquid dolorem sapiente incidunt?</p>
                         <p class="float-start bg-light" style="margin-top: 110px; width: 500px; height: 320px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus autem recusandae praesentium illum incidunt, voluptatem, quos aperiam fuga debitis impedit perferendis reiciendis ratione magni assumenda obcaecati esse consequatur vero! Eveniet vel maxime provident fugit qui dolorum eligendi labore quae facere quas, nihil asperiores quidem exercitationem modi possimus nemo magni! Ducimus eligendi voluptatum quod accusamus veritatis recusandae in, deserunt commodi at.</p>
@@ -662,14 +711,14 @@
                     <p>The wedding will take place on <span class="text-danger">[Censored]</span> at the <span class="text-danger">[Censored]</span>. A reception will follow immediately after the
                         ceremony. Dress code is semi-formal. Please RSVP by <span class="text-danger">[Censored]</span>.</p>
                     <div class="details-images  mb-3">
-                        <img class="float-start img" src="gambar/bgcincin.jpg" alt="Wedding Details 1" style="height: 200px;">
-                        <img class="float-end gmi" src="gambar/cincinbunga.jpg" alt="Wedding Details 2" style="height: 200px;">
+                        <img class="float-start img" src="gambar/bgcincin.jpg" alt="Wedding Details 1" style="height: 200px; width: 200px;">
+                        <img class="float-end gmi" src="gambar/cincinbunga.jpg" alt="Wedding Details 2" style="height: 200px; width: 200px;">
                     </div>
                 </div> 
             </section>
 
-            <div style="justify-content: center; display: flex;">
-            <section class="rsvp d-flex center justify-content-center" id="rsvp" style="margin-top: 370px; width: fit-content;">
+            <div class="pesan" style="display: flex; justify-content: center; margin-top: 320px;">
+            <section class="rsvp d-flex center justify-content-center" id="rsvp" style="width: fit-content;">
                 <div class="container">
                     <div class="card">
                         <div class="card-header text-center">
