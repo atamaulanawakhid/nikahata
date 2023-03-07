@@ -510,12 +510,20 @@
     }
 
     .pesan{
-        margin-left: 5%;
-        width: 400px;
+        width: auto;
+        justify-content: center;
         display: flex;
         margin-top: 220px !important;
         padding-top: 10px;
     }
+
+    .pesan > section{
+        width: 80% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
     .pesan > section > div > div > div > iframe{
         width: 400px;
@@ -715,20 +723,20 @@
                     <p>The wedding will take place on <span class="text-danger">[Censored]</span> at the <span class="text-danger">[Censored]</span>. A reception will follow immediately after the
                         ceremony. Dress code is semi-formal. Please RSVP by <span class="text-danger">[Censored]</span>.</p>
                     <div class="details-images  mb-3">
-                        <img class="float-start img" src="gambar/bgcincin.jpg" alt="Wedding Details 1" style="height: 200px; width: 200px;">
-                        <img class="float-end gmi" src="gambar/cincinbunga.jpg" alt="Wedding Details 2" style="height: 200px; width: 200px;">
+                        <img class="float-start img" src="gambar/bgcincin.jpg" alt="Wedding Details 1" style="height: 200px;">
+                        <img class="float-end gmi" src="gambar/cincinbunga.jpg" alt="Wedding Details 2" style="height: 200px;">
                     </div>
                 </div> 
             </section>
 
-            <div class="pesan" style="display: flex; justify-content: center; margin-top: 320px;">
-            <section class="rsvp d-flex center justify-content-center" id="rsvp" style="width: fit-content;">
+            <div class="pesan" style="display: flex; justify-content: center; align-items: center; margin-top: 320px;">
+            <section class="rsvp d-flex center justify-content-center" id="rsvp" style="width: fit-content; width: 50%;">
                 <div class="container">
                     <div class="card">
                         <div class="card-header text-center">
                             RSVP
                         </div>
-                        <div class="">
+                        <div class="" style="display: flex; justify-content: center; align-items: center;">
                             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdalg01nUXC5HxfZcl4UEtnnweei65gY-1FAfX6GCoQkF4aew/viewform?embedded=true" width="640" height="570" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
                             <!-- <h5 class="card-title">Please RSVP by September 1, 2023. We can't wait to celebrate with you!</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
