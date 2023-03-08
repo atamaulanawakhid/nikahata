@@ -571,8 +571,8 @@
     }    
 }
     </style>
-    <body>
-    <div onclick="togglePlayback()">
+    <body onscroll="togglePlayback(event)" onkeypress="togglePlayback(event)" onclick="togglePlayback(event)">
+    <div>
         <div>
             <nav class="navbar navbar-expand-lg bg-danger-subtle fixed-top">
                 <div class="container-fluid">
@@ -630,7 +630,7 @@
         </div>
 
         <audio id="bg-music" autoplay loop hidden>
-            <source src="musik/Doppio's Ringtone (JoJo's Bizzare Adventure).m4a" type="audio/mpeg">
+            <source src="musik/Gwyn, Lord of Cinder - Dark Souls Soundtrack_Lmo_X8.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
       
@@ -839,20 +839,26 @@
             https://picsum.photos/id/1004/1200/600
             https://picsum.photos/id/1005/1200/600 -->
         
-
-        <script>
+        <!-- <script>
+            window.onload = function() {
+                setTimeout(function() {
+                document.getElementById("myDiv").click();
+                }, 1000);
+                };
+        </script> -->
+        <script>            
             var music = document.getElementById("bg-music");
 
-function togglePlayback() {
-  if (music.paused) {
-    music.play();
-    // document.getElementsByTagName('button')[0].innerHTML = 'Pause Music';
-  } 
-//   else {
-//     music.pause();
-//     document.getElementsByTagName('button')[0].innerHTML = 'Play Music';
-//   }
-}
+            function togglePlayback(event) {
+            if (music.paused) {
+                music.play();
+                // document.getElementsByTagName('button')[0].innerHTML = 'Pause Music';
+            }
+            //   else {
+            //     music.pause();
+            //     document.getElementsByTagName('button')[0].innerHTML = 'Play Music';
+            //   }
+            }
             // const button = document.querySelector('#myButton');
             // const element = document.querySelector('#bungkus');
             
