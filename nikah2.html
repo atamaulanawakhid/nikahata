@@ -637,7 +637,7 @@
     <div class="ani">
         <div class="container-fluid" style="text-shadow: -1px -1px 0 red; text-shadow: 1px 1px 0 red;">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators w-100 w-10">
                     <button
                         type="button"
                         data-bs-target="#carouselExampleCaptions"
@@ -657,9 +657,9 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active w-100">
                         <img
-                            src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=0"
                             class="d-block w-100"
                             alt="...">
                         <div class="carousel-caption d-sm-block">
@@ -667,9 +667,9 @@
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item w-100">
                         <img
-                            src="https://images.pexels.com/photos/313707/pexels-photo-313707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            src="https://images.pexels.com/photos/313707/pexels-photo-313707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=0"
                             class="d-block w-100"
                             alt="...">
                         <div class="carousel-caption d-sm-block">
@@ -677,9 +677,9 @@
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item w-100">
                         <img
-                            src="https://images.pexels.com/photos/1024968/pexels-photo-1024968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            src="https://images.pexels.com/photos/1024968/pexels-photo-1024968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=0"
                             class="d-block w-100"
                             alt="...">
                         <div class="carousel-caption d-sm-block">
@@ -859,6 +859,18 @@
             //     document.getElementsByTagName('button')[0].innerHTML = 'Play Music';
             //   }
             }
+            var startY, endY;
+            Element.addEventListener('touchstart', function(e){
+                startY = e.touches[0].clientY;
+            });
+            Element.addEventListener('touchend', function(e){
+                endY = e.changedTouches[0].clientY;
+                if (endY < startY) {
+                    music.play()
+                } else if (endY > startY) {
+                    music.play()
+                }
+            })
             // const button = document.querySelector('#myButton');
             // const element = document.querySelector('#bungkus');
             
