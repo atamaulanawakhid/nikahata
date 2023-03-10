@@ -501,6 +501,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.wrapper > .card > a > button{
+    width: 60%;
+}
+
 @media only screen and (max-width: 767px){
     .navbar > div > a{
         font-size: 14px;
@@ -554,8 +558,17 @@
         height: 100px !important;
     }
 
+    .wrapper{
+        display: flex;
+        gap: 30px;
+    }
+
+    .wrapper > .card > a > button{
+        width: 80%;
+    }
+
     .col-sm-4{
-        font-size: 13.5px;
+        font-size: 10px;
     }
 
     .col-sm-4 > h1{
@@ -811,29 +824,32 @@
     </div>
 </div>
 
-        <div class="container mb-3 mt-3" id="link">
-            <div class="wrapper">
-                <div class="card text-center col-sm-4">
+        <div class="container mb-3 mt-3 w-100" id="link">
+            <div class="wrapper w-100">
+                <div class="card text-center col-sm-4 border-0">
                     <h1 class="title">Youtube</h1>
                     <i class="fa-brands fa-youtube icons yt"></i>
                     <p class="description">Ata Youtube Chanel</p>
-                    <a href="https://www.youtube.com/@sdcick6486">
+                    <a href="https://www.youtube.com/@sdcick6486" target="_blank">
                         <button class="flw">Follow</button>
                     </a>
                 </div>
-                <div class="card text-center col-sm-4">
+                <div class="card text-center col-sm-4 border-0">
                     <h1 class="title">Instagram</h1>
                     <i class="fa-brands fa-instagram icons ig"></i>
                     <p class="description">Ata Instagram Account</p>
-                    <a href="https://instagram.com/ata_maulana_wakhid?igshid=NTE5MzUyOTU=">
+                    <a href="https://instagram.com/ata_maulana_wakhid?igshid=NTE5MzUyOTU=" target="_blank">
                         <button class="flw">Follow</button>
                     </a>
                 </div>
-                <div class="card text-center col-sm-4">
+                <div class="card text-center col-sm-4 border-0">
                     <h1 class="title">Facebook</h1>
                     <i class="fa-brands fa-facebook icons fb"></i>
                     <p class="description">Ata Facebook Account</p>
-                    <button class="flw">Follow</button>
+                    <a href="" target="_blank">
+                        <button class="flw">Follow</button>
+                    </a>
+                    
                 </div>
             </div>
         </div>
