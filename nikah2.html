@@ -870,7 +870,7 @@
 
             const threshold = 1;
 
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function togglePlayback(event) {
                 if (window.scrollY > threshold) {
                     audio.play();
                 }
