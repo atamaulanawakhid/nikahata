@@ -866,18 +866,15 @@
             //     document.getElementsByTagName('button')[0].innerHTML = 'Play Music';
             //   }
             }
-            var startY, endY;
-            Element.addEventListener('touchstart', function(e){
-                startY = e.touches[0].clientY;
-            });
-            Element.addEventListener('touchend', function(e){
-                endY = e.changedTouches[0].clientY;
-                if (endY < startY) {
-                    music.play()
-                } else if (endY > startY) {
-                    music.play()
+            const audio = ocument.getElementById("bg-music");
+
+            const threshold = 1;
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > threshold) {
+                    audio.play();
                 }
-            })
+            });
             // const button = document.querySelector('#myButton');
             // const element = document.querySelector('#bungkus');
             
