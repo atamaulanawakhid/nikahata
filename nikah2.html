@@ -596,7 +596,7 @@
         <div>
             <nav class="navbar navbar-expand-lg bg-danger-subtle fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="nikah.html" style="background: linear-gradient(90deg,#00dbde,#fc00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Pernikahan Manusia & Manusia</a>
+                    <a id="hyper" data-value="Pernikahan Manusia & Manusia" class="navbar-brand" href="nikah.html" style="background: linear-gradient(90deg,#00dbde,#fc00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Pernikahan Manusia & Manusia</a>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -608,7 +608,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ms-auto">
                             <li class="nav-item hoverr">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -735,7 +735,7 @@
                     <h2>Save The Date</h2>
                     <h3>October 4, 2023</h3>
                     <p>Tanah Pemerintah</p>
-                    <a href="#rsvp" class="rsvp-button">RSVP</a>
+                    <a id="hyper2" data-value="RSVP" href="#rsvp" class="rsvp-button">RSVP</a>
                 </div>
             </section>
             <section class="story" id="story">
@@ -869,6 +869,61 @@
                 }, 1000);
                 };
         </script> -->
+        <script>
+            const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let interval = null;
+
+document.getElementById("hyper").onmouseover = event => {
+    let iteration = 0;
+
+    clearInterval(interval);
+
+interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+    .split("")
+    .map((letter, index) => {
+        if(index < iteration) {
+        return event.target.dataset.value[index];
+        }
+
+return letters[Math.floor(Math.random() * 26)]
+})
+.join("");
+
+if(iteration >= event.target.dataset.value.length){ 
+clearInterval(interval);
+}
+
+iteration += 1 / 2;
+}, 30);
+}
+
+document.getElementById("hyper2").onmouseover = event => {
+    let iteration = 0;
+
+    clearInterval(interval);
+
+interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+    .split("")
+    .map((letter, index) => {
+        if(index < iteration) {
+        return event.target.dataset.value[index];
+        }
+
+return letters[Math.floor(Math.random() * 26)]
+})
+.join("");
+
+if(iteration >= event.target.dataset.value.length){ 
+clearInterval(interval);
+}
+
+iteration += 1/2;
+}, 50);
+}
+        </script>
         <script>            
             var music = document.getElementById("bg-music");
 
