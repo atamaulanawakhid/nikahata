@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dari Tik Tok</title>
+</head>
+<style>
+    .kodfun-galeri{
+        position: relative;
+        display: flex;
+        height: 20rem;
+        gap: 1rem;
+    }
+    .kodfun-galeri > div{
+        display: flex;
+        flex: 1;
+        border-radius: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    }
+    .kodfun-galeri > div:hover{
+        flex: 3;
+    }
+</style>
+<body>
+    <div class="kodfun-galeri">
+        <div style="background-image: url(gambar/ata.jpg)"></div>
+        <div style="background-image: url(gambar/diri.jpg)"></div>
+        <div style="background-image: url(gambar/jatuh.jpg);"></div>
+        <div style="background-image: url(gambar/buku.jpg);"></div>
+        <div style="background-image: url(gambar/obama.jpg);"></div>
+        <div style="background-image: url(gambar/20220821_103625.jpg);"></div>
+        <div style="background-image: url(gambar/doctor.jpg);"></div>
+    </div>
+</body>
+</html>
