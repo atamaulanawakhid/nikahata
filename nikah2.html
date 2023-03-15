@@ -506,6 +506,26 @@
     width: 60%;
 }
 
+.kodfun-galeri{
+    position: relative;
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    padding: 10px;
+}
+.kodfun-galeri > div{
+    display: flex;
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.kodfun-galeri > div:hover{
+    flex: 3.5;
+}
+
 @media only screen and (max-width: 767px){
     .navbar > div > a{
         font-size: 14px;
@@ -520,8 +540,8 @@
         width: auto;
         justify-content: center;
         display: flex;
-        margin-top: 220px !important;
-        padding-top: 10px;
+        margin-top: 0px !important;
+        padding-top: 20px !important;
     }
 
     .pesan > section{
@@ -762,14 +782,20 @@
                     </div>
                     <p>The wedding will take place on 4 October 2023 at my house. A reception will follow immediately after the
                         ceremony. Dress code is semi-formal. Please RSVP by July.</p>
-                    <div class="details-images  mb-3">
-                        <img class="float-start img" src="gambar/bgcincin.jpg" alt="Wedding Details 1" style="height: 200px; border-radius: 20px;">
-                        <img class="float-end gmi" src="gambar/cincinbunga.jpg" alt="Wedding Details 2" style="height: 200px; border-radius: 20px;">
-                    </div>
                 </div> 
+
+                <div class="kodfun-galeri">
+                    <div style="background-image: url(gambar/love.jpg)"></div>
+                    <div style="background-image: url(https://images.unsplash.com/flagged/photo-1566755395267-86735b23d097?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)"></div>
+                    <div style="background-image: url(https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);"></div>
+                    <div style="background-image: url(https://images.unsplash.com/photo-1494063716425-20145394c915?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80);"></div>
+                    <div style="background-image: url(https://images.unsplash.com/photo-1430806746135-4c9775bfea07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80);"></div>
+                    <div style="background-image: url(https://images.unsplash.com/photo-1460364157752-926555421a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);"></div>
+                    <div style="background-image: url(https://images.unsplash.com/photo-1498979237786-9c35706bd45e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);"></div>
+                </div>
             </section>
 
-            <div class="pesan" style="display: flex; justify-content: center; align-items: center; margin-top: 320px;">
+            <div class="pesan" style="display: flex; justify-content: center; align-items: center; padding-top: 50px;">
             <section class="rsvp d-flex center justify-content-center" id="rsvp" style="width: fit-content; width: 50%;">
                 <div class="container">
                     <div class="card">
