@@ -616,7 +616,7 @@ iframe{
     }
 }
     </style>
-    <body onscroll="togglePlayback(event)" onkeypress="togglePlayback(event)" onclick="togglePlayback(event)">
+    <body onscroll="togglePlayback()" onkeypress="togglePlayback()" onclick="togglePlayback()">
     <div>
         <div>
             <nav class="navbar navbar-expand-lg bg-danger-subtle fixed-top">
@@ -969,7 +969,7 @@ iteration += 1/2;
         <script>            
             var music = document.getElementById("bg-music");
 
-            function togglePlayback(event) {
+            function togglePlayback() {
             if (music.paused) {
                 music.play();
                 // document.getElementsByTagName('button')[0].innerHTML = 'Pause Music';
@@ -983,7 +983,7 @@ iteration += 1/2;
 
             const threshold = 1;
 
-            window.addEventListener('scroll', function togglePlayback(event) {
+            window.addEventListener('scroll', function togglePlayback() {
                 if (window.scrollY > threshold) {
                     audio.play();
                 }
