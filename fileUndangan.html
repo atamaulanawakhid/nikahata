@@ -1,0 +1,174 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan</title>
+  <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        animation: fade 1s ease-in both;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -40%, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .button:hover {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+  transform: translate3d(0, 0, 0);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: ease-in-out, 0.5s;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(4px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+
+      .header {
+        background-color: #F4D7D7;
+        text-align: center;
+        /* padding: 4px; */
+      }
+      h1 {
+        font-size: 3em;
+        margin: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .image {
+        margin-left: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: auto;
+      }
+      .main {
+        background-color: #FFF;
+        padding: 20px;
+        text-align: center;
+      }
+      p {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+      .button {
+        display: inline-block;
+        background-color: #F4D7D7;
+        color: #FFF;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .button:hover{
+        color: black;
+        background-color: rgb(230, 145, 89);
+        transition: ease-in-out, 2s;
+      }
+      .footer {
+        background-color: #F4D7D7;
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+      }
+    </style> 
+ <style type="text/css" id="dcoder_stylesheet">/* Responsive styles for desktop, tablet, and mobile */
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1em;
+  }
+  .button {
+    font-size: 0.8em;
+  }
+}
+
+/* Styling for desktop */
+@media screen and (min-width: 801px) {
+  .header {
+    height: 100px;
+  }
+  h1 {
+    line-height: 100px;
+  }
+  .image {
+    max-height: 600px;
+  }
+}
+
+/* Styling for tablet */
+@media screen and (min-width: 601px)  {
+  
+}
+
+  </style>
+</head> 
+
+<body> 
+  <div class="header"> 
+   <h1>Wedding Invitation</h1> 
+  </div> 
+  <div class="container"> 
+   <img class="image" src="gambar/orang.png" alt="Wedding Photo"> 
+   <div class="main"> 
+    <h2>You're invited!</h2> 
+    <p>Please join us for the wedding of <strong>[Manusia]</strong> and <strong>[Manusia]</strong></p> 
+    <p><strong>Date:</strong> 4 Oktober 2023</p> 
+    <p><strong>Time:</strong> Dari Awal Sampai Selesai</p> 
+    <p><strong>Location:</strong> Tanah Pemerintah</p>
+    <div class="tombol">
+      <a href="fileUndangan2.html" class="button" target="_blank">RSVP</a> 
+    </div>
+   </div> 
+  </div> 
+  <!-- <div style="display: flex; width: 110px; height: 110px; margin-left: 80%; overflow-x: scroll; max-width: 99px;">
+    <img src="gambar/jatuh.jpg" alt="">
+    <img src="gambar/halo.jpg" alt="">
+    <img src="gambar/diri.jpg" alt="">
+    <img src="gambar/pwd.jpg" alt="">
+  </div> -->
+  <div class="footer"> 
+   <p>© 2023 [Manusia] and [Manusia]</p> 
+   <p style="opacity: 0.1; text-decoration: wavy;">Build by Ata Maulana Wakhid (08) XI TKJ-A</p>
+  </div> 
+  </body>
+</html>
